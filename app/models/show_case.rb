@@ -1,0 +1,2 @@
+class ShowCase < ApplicationRecord
+end

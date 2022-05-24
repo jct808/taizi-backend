@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :cases
+  resources :show_cases
   resources :products
   resources :categories
   resources :suppliers

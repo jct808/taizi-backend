@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html class="h-full bg-white">
+<html>
   <head>
-    <title>嘉義 太子傢俱設計公司</title>
+    <title>TaiziBackend</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,10 +9,9 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body class="h-full overflow-hidden">
-    <div class="h-full flex">
-      <%= render "layouts/multi-column" %>
+  <body>
+    <main>
       <%= yield %>
-    </div>
+    </main>
   </body>
 </html>

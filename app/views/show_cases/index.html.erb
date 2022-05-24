@@ -4,11 +4,11 @@
   <% end %>
 
   <div class="flex justify-between items-center">
-    <h1 class="font-bold text-4xl">Cases</h1>
-    <%= link_to 'New case', new_case_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
+    <h1 class="font-bold text-4xl">Show cases</h1>
+    <%= link_to 'New show case', new_show_case_path, class: "rounded-lg py-3 px-5 bg-blue-600 text-white block font-medium" %>
   </div>
 
-  <div id="cases" class="min-w-full">
-    <%= render @cases %>
+  <div id="show_cases" class="min-w-full">
+    <%= render @show_cases %>
   </div>
 </div>
