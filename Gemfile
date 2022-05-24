@@ -9,9 +9,6 @@ gem "rails", "~> 7.0.3"
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
-# Use sqlite3 as the database for Active Record
-gem "sqlite3", "~> 1.4"
-
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -57,10 +54,20 @@ gem 'acts-as-taggable-on', '~> 9.0'
 # Use simple form
 gem 'simple_form'
 
-# Use simple form for Tailwind
+# Use simple form for Tailwind 
 gem 'simple_form-tailwind'
 
+# Use pg
+gem 'pg', '>= 0.18', '< 2.0'
+
+
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
 group :development, :test do
+  # Use sqlite3 as the database for Active Record
+  gem "sqlite3", "~> 1.4"
+  
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
 end
@@ -82,3 +89,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# For deployment 
+gem 'capistrano', '~> 3.11'
+gem 'capistrano-rails', '~> 1.4'
+gem 'capistrano-passenger', '~> 0.2.0'
+gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
