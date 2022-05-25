@@ -1,11 +1,11 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.17.0"
 
-set :application, "taizi"
+set :application, "taizi-backend"
 set :repo_url, "git@github.com:jct808/taizi-backend.git"
 set :branch, 'main'
 
-set :deploy_to, "/home/taizi/#{fetch :application}"
+set :deploy_to, "/home/jct808/taizi/#{fetch :application}"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
 
